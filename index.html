@@ -224,40 +224,52 @@
         </section>
 
         <!--seçao contato-->
-        <section id="contato">
-            <h2>fale conosco</h2>
-            <p>
-                tem duvidas sobre algum estrumento? mande uma mensagem ou agende uma visita.
+        <section id="contato" class="container" style="background-color: #eeeeee;">
+            <h2 class="tituloSecao">fale conosco</h2>
+            <div style="max-width: 600px; margin: 0 auto; background: #ffffff; padding: 2rem; border-radius: 8px;box-shadow: 0 4px 10px rgba(0,0,0,0.5);">
+            <p style="text-align: center; margin-bottom: 2rem;">
+             tem duvidas sobre algum estrumento? mande uma mensagem ou agende uma visita.
             </p>
-            <address>
+            <address style="text-align: center; margin-bottom: 2rem; font-style: normal;">
                 <p>
-                    <strong>loja física: </strong>centro historico, xique-xique Bahia
-                </p>
+                    <strong>loja física: </strong>centro historico, xique-xique Bahia</p>
             </address>
             <form action="#">
-                <label for="nome">nome completo</label>
-                <br>
-                <input type="text" name="nome" id="nome" placeholder="digite seu nome" required>
-                <br><br>
-                <label for="email">e-mail</label>
-                <br>
-                <input type="email" name="email" id="email" placeholder="digite seu e-mail" required>
-                <br><br>
-                <label for="departamento">departamento</label>
-                <br>
-                <select name="departamento" id="departamento">
+                <label for="nome" style="font-weight: bold">nome completo</label>
+                <input 
+                type="text"
+                 name="nome"
+                  id="nome"
+                  placeholder="dIgite seu nome"
+                  required
+                  style="width: 100%; padding: 0.8rem; margin: 0.5rem 0 1.5rem 0; border: 1px solid #cccccc; border-radius:
+                4px;"
+                 />
+                <label for="email" style="font-weight: bold">E-mail</label>
+                <input 
+                 type="email"
+                 name="email" 
+                 id="email" 
+                 placeholder="digite seu e-mail"
+                  required
+                   style="width: 100%; padding: 0.8rem; margin: 0.5rem 0 1.5rem 0; border: 1px solid #cccccc; border-radius:
+                4px;"
+                />
+                <label for="departamento" style="font-weight: bold;">departamento</label>
+                <select name="departamento" id="departamento"  style="width: 100%; padding: 0.8rem; margin: 0.5rem 0 1.5rem 0; border: 1px solid #cccccc; border-radius:
+                4px;">
                     <option value="vendas">vendas</option>
                     <option value="suporte">suporte tecnico</option>
                     <option value="financeiro">financeiro</option>
                     <option value="sugestão">sugestões</option>
                 </select>
-                <br><br>
-                <label for="mensagem">mensagem</label>
-                <br>
-                <textarea name="mensagem" id="mensagem" rows="10"></textarea>
-                <br><br>
-                <button type="submit">enviar mensagem</button>
+                <label for="mensagem" style="font-weight: bold;">mensagem</label>
+                <textarea name="mensagem" id="mensagem" rows="10" style="width: 100%; padding: 0.8rem; margin: 0.5rem 0 1.5rem 0; border: 1px solid #cccccc; border-radius: 4px;"></textarea>
+                <button type="submit" class="botaoPrincipal" style="width: 100%;border:none;cursor: pointer;">enviar mensagem</button>
             </form>
+            </div>
+            <p>
+                
         </section>
     </main>
 
