@@ -103,7 +103,13 @@
             border-radius: 16px;
             padding: 1.5rem;
             width: 600px;
-            box-shadow:0 4px 6px rgb(0,0,0);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            transition: transform 0.5s ease 
+        }
+
+        .cartaoProduto :hover {
+            transform: translateY(-5px)
         }
     </style>
 </head>
@@ -163,52 +169,57 @@
         </section>
 
         <!--seçao produtos-->
-        <section id="produtos" class="container" style="background-color: #ffffff;">
+        <section id="produtos" class="container" style="background-color: #eeeeee;">
             <h2 class="tituloSecao">catálago de instrumentos</h2>
             <div class="gradeProdutos">
                 <article class="cartaoProduto">
                     <h3 class="nomeProduto">guitarra black-star</h3>
-                    <img src="https://cdn.awsli.com.br/2500x2500/1795/1795431/produto/82859862/guitarra-tagima-tg-500-preta-foto-2-l2zfi8uwrm.jpg"
-                        alt="guitarra black-star" width="500" height="500">
+                    <img 
+                    src="https://cdn.awsli.com.br/2500x2500/1795/1795431/produto/82859862/guitarra-tagima-tg-500-preta-foto-2-l2zfi8uwrm.jpg"
+                        alt="guitarra black-star" width="500"
+                        style="border-radius: 4px; margin-bottom: 1rem;"
+                        />
                     <p>
-                        <strong>marca</strong> black-star
-                    </p>
-                    <p>guitarra tida preta no estilo rock roll retrô</p>
-                    <p><em>preço; R$3.500,00</em></p>
-                    <a href="#">adicionar o carrinho</a>
+                        <strong>marca</strong> black-star</p>
+                    <p>guitarra toda preta no estilo rock roll retrô</p>
+                    <p style="color: #4cdc2f;font-weight: bold;
+                    font-size: 1.2 rem;"><em>preço; R$3.500,00</em></p>
+                    <a href="#" class="botaoPrincipal">adicionar o carrinho</a>
                 </article>
     
-                <article>
-                    <h3>baterria eletronica</h3>
+                <article  class="cartaoProduto">
+                    <h3 class="nomeProduto">baterria eletronica</h3>
                     <img src="https://www.lojaopenstage.com.br/upload/blog/4IO39fnfnwVtQ8KAXu45jKwjvyPmjFTF73JxkQPw.jpeg"
-                        alt="baterria eletronica" width="500" height="300">
+                        alt="baterria eletronica" width="600" height="500"
+                        style="border-radius: 4px; margin-bottom: 1rem;">
                     <p>
                         <strong>marca</strong>xpn8
                     </p>
                     <p>baterria eletronica completa de qualidade.</p>
-                    <p><em>preço; R$1200,00</em></p>
-                    <a href="#">adicionar o carrinho</a>
+                    <p style="color: #4cdc2f;font-weight: bold;
+                    font-size: 1.2 rem;"><em>preço; R$1200,00</em></p>
+                    <a href="#" class="botaoPrincipal">adicionar o carrinho</a>
                 </article>
 
             </div>
         </section>
 
         <!--seçao depoimentos-->
-        <section id="depoimentos">
-            <h2>o que nossos clientes dizem </h2>
-            <blockquote>
-                <p>
+        <section id="depoimentos" class="container">
+            <h2 class="tituloSecao">o que nossos clientes dizem </h2>
+            <blockquote style="background: #ffffff;padding: 2rem; border-left: 5px solid #65b3f7; box-shadow: 0 2px 5px rgba(0,0,0,0.5);">
+                <p style="font-style: italic;">
                     "a guitarra chegou aqui e fiquei louco pra tocar porém foi tao bem embalado que não consegui abrir
                     nota 10"
                 </p>
-                <footer>- <cite>dodozinho_rgb</cite></footer>
+                <footer style="margin-top: 1rem; font-weight: bold;">- <cite>dodozinho_rgb</cite></footer>
             </blockquote>
             <br>
-            <blockquote>
-                <p>
+            <blockquote style="background: #ffffff;padding: 2rem; border-left: 5px solid #65b3f7; box-shadow: 0 2px 5px rgba(0,0,0,0.5);">
+                <p style="font-style: italic;">
                     "a baterria chegou aqui toda quebrada, pessimo nota 2"
                 </p>
-                <footer>- <cite>yaara123</cite></footer>
+                <footer  style="margin-top: 1rem; font-weight: bold;">- <cite>yaara123</cite></footer>
             </blockquote>
         </section>
 
