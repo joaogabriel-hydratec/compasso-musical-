@@ -77,8 +77,8 @@
         }
         
         .botaoPrincipal:hover{
-            background-color: #65b3f7;
-            color: #0f0777;
+            background-color: #79e1e9;
+            color: #3a89d3;
         }
 
         .container{
@@ -111,6 +111,22 @@
         .cartaoProduto :hover {
             transform: translateY(-5px)
         }
+
+
+        .rodapePrincipal {
+            background-color: #111010;
+            color: #ffffff;
+            padding: 3rem 5%;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 2rem;
+        }
+
+        .rodapePrincipal h2,
+        .rodapePrincipal h3 {
+            color: #ffffff;
+        }
     </style>
 </head>
 
@@ -138,7 +154,7 @@
     <!--conteudo principal-->
     <main>
         <!--seçao hero-->
-        <section id="hero" class="secaoHero" style="background-color: #eceff1; text-align: center; padding: 5rem 2rem; border-bottom: 4px solid #3588d0; ">
+        <section id="hero" class="secaoHero" style="background-color: #f1ecef; text-align: center; padding: 5rem 2rem; border-bottom: 4px solid #3588d0; ">
             <H2 style="font-size: 3rem;">O SOM DA SUA VIDA COMEÇA AQUI!</H2>
                 <p style="font-size: 1.2rem; max-width: 600px; margin: 0 auto 2rem auto;">
                     encontre as melhores marcas de bateria, guitarras, saxofones e teclados com condições imperdiveis.
@@ -215,7 +231,7 @@
                 <footer style="margin-top: 1rem; font-weight: bold;">- <cite>dodozinho_rgb</cite></footer>
             </blockquote>
             <br>
-            <blockquote style="background: #ffffff;padding: 2rem; border-left: 5px solid #65b3f7; box-shadow: 0 2px 5px rgba(100, 160, 225, 0.5);">
+            <blockquote style="background: #ffffff;padding: 2rem; border-left: 5px solid #65b3f7; box-shadow: 0 2px 5px rgba(83, 201, 255, 0.5);">
                 <p style="font-style: italic;">
                     "a baterria chegou aqui toda quebrada, pessimo nota 2"
                 </p>
@@ -228,7 +244,7 @@
             <h2 class="tituloSecao">fale conosco</h2>
             <div style="max-width: 600px; margin: 0 auto; background: #ffffff; padding: 2rem; border-radius: 8px;box-shadow: 0 4px 10px rgba(0,0,0,0.5);">
             <p style="text-align: center; margin-bottom: 2rem;">
-             tem duvidas sobre algum estrumento? mande uma mensagem ou agende uma visita.
+            tem duvidas sobre algum estrumento? mande uma mensagem ou agende uma visita.
             </p>
             <address style="text-align: center; margin-bottom: 2rem; font-style: normal;">
                 <p>
@@ -274,52 +290,56 @@
     </main>
 
     <!--rodapé do site-->
-    <footer id="footer">
-        <div>
-            <h2>Compasso musical</h2>
+    <footer id="footer" class="rodapePrincipal">
+        <div style="flex: 1; min-width: 250px;">
+            <h2 class="nomeLogo">Compasso musical</h2>
             <p>
                 Desde 2026 conectando pessoas atraves da música.
 
             </p>
         </div>
 
-        <nav>
-            <h3>mapa do site</h3>
-            <ul>
+        <nav style="flex: 1; min-width: 150px;">
+            <h3 style="border-bottom: 2px solid#169cd1; padding-bottom: 0.5rem; 
+                display:inline-block;">mapa do site</h3>
+                <ul style="margin-top: 1rem; line-height: 2;">
                 <li>
-                    <a href="#">Inicio</a>
+                    <a href="#"class="linkNav">Inicio</a>
+                </ul>
+                <li>
+                <a href="#"class="linkNav">sobre</a>
                 </li>
                 <li>
-                    <a href="#">Sobre</a>
+                    <a href="#"class="linkNav">produtos</a>
                 </li>
                 <li>
-                    <a href="#">Produtos</a>
+                    <a href="#"class="linkNav">depoimentos</a>
                 </li>
                 <li>
-                    <a href="#">Depoimentos</a>
-                </li>
-                <li>
-                    <a href="#">Contato</a>
+                    <a href="#"class="linkNav">contato</a>
                 </li>
             </ul>
-
         </nav>
 
         <nav>
-            <h3>Informações</h3>
+            <h3 style="border-bottom: 2px solid#169cd1; padding-bottom: 0.5rem; 
+                display:inline-block;">Informações</h3>
             <li>
-                <a href="#">Termos de Uso</a>
+                <a href="#" class="linkNav">Termos de Uso</a>
             </li>
             <li>
-                <a href="#">Politica de privacidade</a>
+                <a href="#" class="linkNav">Politica de privacidade</a>
             </li>
             <li>
-                <a href="#">Trocas e devoluções</a>
+                <a href="#" class="linkNav">Trocas e devoluções</a>
             </li>
         </nav>
-        <div>
-            <h3>Siga-nos</h3>
-        </div>
+
+        <div style="flex: 1; min-width: 150px;>
+            <h3 style="border-bottom: 2px solid #169cd1; padding-bottom: 0.5rem; 
+                display:inline-block;>Siga-nos</h3>
+        </div style= "display:flex gap: 1rem;">
+          
 
         <div>
             <a href="#">
@@ -330,7 +350,8 @@
         </div>
 
         <div>
-            <h3>Newsletter</h3>
+            <h3 style="border-bottom: 2px solid#169cd1; padding-bottom: 0.5rem; 
+                display:inline-block;">Newsletter</h3>
             <p>
                 Receba promoções exclusivas no seu e-mail:
             </p>
